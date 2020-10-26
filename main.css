@@ -1,0 +1,32 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideAndFadeIn {
+    from { opacity: 0; transform: translateX(100%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+#header {
+    margin-top: 50px;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    transition: all 1s;
+}
+#logo:hover {
+    opacity: 0;
+}
+#header-line {
+    animation: 1.5s ease-out 0s 1 slideAndFadeIn;
+    position: relative;
+    bottom: 55px;
+    height: 6px;
+    background: black;
+    border: none;
+}
